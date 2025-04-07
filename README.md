@@ -4,7 +4,7 @@ Welcome to the DSA-C++ repository! This repository contains implementations of v
 
 ## Contents
 
-- **Øpps**
+- **OOPs**
 - **Arrays**
 - **Linked Lists**
 - **Stacks**
@@ -25,16 +25,14 @@ Welcome to the DSA-C++ repository! This repository contains implementations of v
 
 --> The fundamental principles of OOP include encapsulation, abstraction, inheritance, and polymorphism.
 
-
 Classes and Objects:
 
 --> A class is a blueprint for creating objects (instances), defining attributes (properties) and methods (behaviors) that the objects will have.
 --> Objects are instances of classes and can represent specific entities, such as a car or a user in a system
 
+What is a Constructor in C++?
 
- What is a Constructor in C++?
-
- --> A constructor is a special member function in a class that automatically gets called when an object of the class is created. It is mainly used to initialize objects.
+--> A constructor is a special member function in a class that automatically gets called when an object of the class is created. It is mainly used to initialize objects.
 
 --> 🔹 Key Features of a Constructor:
 
@@ -49,7 +47,7 @@ Classes and Objects:
 2️⃣ Parameterized Constructor → Takes arguments
 3️⃣ Copy Constructor → Copies an object
 
--->  Getter and Setter in C++
+--> Getter and Setter in C++
 
 Getters and Setters are member functions used to access and modify private variables in a class.
 They encapsulate data and ensure controlled access.
@@ -105,7 +103,7 @@ Interfaces (Pure abstract classes)
 
 <!-- ===> 📌 Pure Virtual Function (Simple Definition) -->
 
-A pure virtual function in C++ is a function without implementation in the base class, which must be overridden by derived classes. & pure virtual funtion has value assigned with zero with start virtual keyword 
+A pure virtual function in C++ is a function without implementation in the base class, which must be overridden by derived classes. & pure virtual funtion has value assigned with zero with start virtual keyword
 
 🔹 It makes a class abstract, meaning objects of that class cannot be created.
 🔹 Ensures that all derived classes follow a common structure.
@@ -126,3 +124,6 @@ A pure virtual function in C++ is a function without implementation in the base 
 
  -->
 
+More Interview quetions - OOPs
+
+📌 https://www.interviewbit.com/oops-interview-questions/ 📌

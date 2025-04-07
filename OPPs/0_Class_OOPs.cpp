@@ -3,16 +3,16 @@
 #include <string>
 
 using namespace std;
-
-class Student{
+class Student
+{
 public:
-
-    string name;  // Attribute or Data Member
-    int age; 
+    string name; // Attribute or Data Member
+    int age;
     int roll_no;
     string course;
 
-    void printInfo(){    // Method or Member Function
+    void printInfo()
+    { // Method or Member Function
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
         cout << "Roll No: " << roll_no << endl;
@@ -20,11 +20,9 @@ public:
     }
 };
 
-
-
 int main()
 {
-    Student s1;           // Object of Student Class
+    Student s1; // Object of Student Class
     s1.name = "Shubham";
     s1.age = 23;
     s1.roll_no = 101;
@@ -32,7 +30,7 @@ int main()
 
     s1.printInfo(); // Calling Method
 
-    Student s2;          //create object of each student class
+    Student s2; // create object of each student class
     s2.name = "Patil";
     s2.age = 22;
     s2.roll_no = 102;
@@ -40,11 +38,8 @@ int main()
 
     s2.printInfo(); // Calling Method
 
-    // Above code is not efficient as we have to create object for each student and then assign values to it. 
+    // Above code is not efficient as we have to create object for each student and then assign values to it.
     // We can use Constructor to make it more efficient.
-
-
-
 
     return 0;
 }
@@ -52,7 +47,7 @@ int main()
 // Another Example
 
 // class Home {
-// public: 
+// public:
 //     string Name;
 //     int Floor;
 //     int No_of_Rooms;
@@ -76,7 +71,7 @@ int main()
 //     h1.No_of_Rooms = 4;
 //     h1.No_of_Bathrooms = 2;
 //     h1.Address = "Bengaluru, India";
-    
+
 //     HomeInfo();
 
 //     Home h2;

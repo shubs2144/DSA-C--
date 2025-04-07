@@ -2,60 +2,65 @@
 using namespace std;
 
 // Base class
-class Animal {
+class Animal
+{
 public:
-    virtual void makeSound() { 
-        cout << "Animal makes a sound" << endl; 
+    virtual void makeSound()
+    {
+        cout << "Animal makes a sound" << endl;
     }
 };
 
 // Derived class
-class Dog : public Animal {
+class Dog : public Animal
+{
 public:
-    void makeSound() override { 
-        cout << "Dog barks" << endl; 
+    void makeSound()
+    {
+        cout << "Dog barks" << endl;
     }
 };
 
 // Derived class
-class Cat : public Animal {
+class Cat : public Animal
+{
 public:
-    void makeSound() override { 
-        cout << "Cat meows" << endl; 
+    void makeSound() override
+    {
+        cout << "Cat meows" << endl;
     }
 };
 
-int main() {
-    Animal* a1 = new Cat();
+int main()
+{
+    Animal *a1 = new Cat();
     a1->makeSound(); // Calls Cat's makeSound()
 
     Dog d;
-    Animal* a = &d; // Upcasting: Derived class (Dog) assigned to Base class pointer (Animal)
-    
-    a->makeSound(); // Calls Animal's makeSound() (without virtual function)
+    Animal *a2 = &d; // Upcasting: Derived class (Dog) assigned to Base class pointer (Animal)
+    a2->makeSound(); // Calls Animal's makeSound() (without virtual function)
+
+    Animal *a3 = new Dog(); // Upcasting: Derived class (Dog) assigned to Base class pointer (Animal)
+    a3->makeSound();        // Calls Dog's makeSound() (with virtual function)
 
     delete a1;
-    delete a;
+    delete a2;
 
     return 0;
 }
 
-
-
 //  <!--- Theory of Polymorphism in C++ (OOPs) --->
 
+/* ### **Polymorphism in C++ (OOPs)**
 
+**Definition: = many forms  **
+Polymorphism is one of the core concepts of Object-Oriented Programming (OOP) in C++. It allows objects of different classes to be treated as objects of a common base class. It enables a single interface to represent different types (or classes).
 
-/* ### **Polymorphism in C++ (OOPs)**  
+### **Types of Polymorphism in C++**
+Polymorphism in C++ is categorized into two main types:
 
-**Definition: = many forms  **  
-Polymorphism is one of the core concepts of Object-Oriented Programming (OOP) in C++. It allows objects of different classes to be treated as objects of a common base class. It enables a single interface to represent different types (or classes).  
-
-### **Types of Polymorphism in C++**  
-Polymorphism in C++ is categorized into two main types:  
-
-1. **Compile-time Polymorphism (Static Polymorphism)**  
-2. **Run-time Polymorphism (Dynamic Polymorphism)**  
+1. **Compile-time Polymorphism (Static Polymorphism)**
+2. **Run-time Polymorphism (Dynamic Polymorphism)**
 
 ---
 
@@ -63,9 +68,9 @@ Polymorphism in C++ is categorized into two main types:
 Compile-time polymorphism is resolved during compilation and is achieved through **function overloading** and **operator overloading**.
 
 ### **A. Function Overloading**
-Function overloading allows multiple functions with the same name but different parameters (different type or number of arguments).  
+Function overloading allows multiple functions with the same name but different parameters (different type or number of arguments).
 
-#### **Example: Function Overloading**  
+#### **Example: Function Overloading**
 ```cpp
 #include <iostream>
 using namespace std;
@@ -100,7 +105,7 @@ public:
     int real, imag;
     Complex(int r, int i) : real(r), imag(i) {}
 
-    Complex operator+(const Complex& obj) { 
+    Complex operator+(const Complex& obj) {
         return Complex(real + obj.real, imag + obj.imag);
     }
 
@@ -131,15 +136,15 @@ using namespace std;
 
 class Base {
 public:
-    virtual void show() { 
-        cout << "Base class function" << endl; 
+    virtual void show() {
+        cout << "Base class function" << endl;
     }
 };
 
 class Derived : public Base {
 public:
-    void show() override { 
-        cout << "Derived class function" << endl; 
+    void show() override {
+        cout << "Derived class function" << endl;
     }
 };
 
@@ -190,19 +195,21 @@ int main() {
 
 ### **Key Differences Between Static and Dynamic Polymorphism**
 | Feature                | Static Polymorphism | Dynamic Polymorphism |
-|------------------------|--------------------|----------------------|
-| Binding Time          | Compile-time       | Run-time            |
-| Implementation        | Function Overloading, Operator Overloading | Function Overriding, Virtual Functions |
-| Performance           | Faster (Resolved at compile-time) | Slower (Resolved at runtime) |
-| Flexibility          | Less flexible      | More flexible |
-| Requires `virtual` keyword | No | Yes |
+|------------------------|-------------------- |----------------------|
+| Binding Time           | Compile-time        | Run-time            |
+| Implementation         | Function Overloading,
+                          Operator Overloading | Function Overriding, Virtual Functions |
+| Performance            | Faster (Resolved at
+                           compile-time)       | Slower (Resolved at runtime) |
+| Flexibility            | Less flexible       | More flexible |
+| Requires `virtual`
+keyword                  | No                  | Yes |
 
 ---
 
 ## **Conclusion**
-Polymorphism in C++ provides flexibility and reusability in OOP.  
-- **Compile-time polymorphism** (overloading) improves efficiency.  
-- **Run-time polymorphism** (overriding) provides dynamic behavior.  
-- **Abstract classes & virtual functions** enforce consistency across derived classes.  
-
-Understanding polymorphism is crucial for writing modular, maintainable, and scalable C++ applications. 🚀 */
+Polymorphism in C++ provides flexibility and reusability in OOP.
+- **Compile-time polymorphism** (overloading) improves efficiency.
+- **Run-time polymorphism** (overriding) provides dynamic behavior.
+- **Abstract classes & virtual functions** enforce consistency across derived classes.
+*/

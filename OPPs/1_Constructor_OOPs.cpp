@@ -4,11 +4,16 @@
 
 using namespace std;
 
-class Student {
-public: 
-    
+class Student
+{
+public:
+    string Name; // Attribute or Data Member
+    int Age;
+    int Roll_no;
+    string Course;
 
-    void printInfo() {
+    void printInfo()
+    {
         cout << "Name: " << Name << endl;
         cout << "Age: " << Age << endl;
         cout << "Roll No: " << Roll_no << endl;
@@ -16,7 +21,8 @@ public:
     }
 
     // Constructor
-    Student(string name , int age , int roll_no , string course){
+    Student(string name, int age, int roll_no, string course)
+    {
         Name = name;
         Age = age;
         Roll_no = roll_no;
@@ -31,36 +37,32 @@ public:
 
     // when attribute and assign values are same then we can use this keyword to assign values.
 
-    // Student(string Name , int Age , int Roll_no , string Course){   
+    // Student(string Name , int Age , int Roll_no , string Course){
     //     this->Name = Name;
     //     this->Age = Age;
     //     this->Roll_no = Roll_no;
     //     this->Course = Course;
     // }
-
-
 };
 
-int main(){
+int main()
+{
     Student s1 = Student("Shubham", 23, 101, "Engineering");
     s1.printInfo();
 
     Student s2 = Student("Patil", 22, 102, "Pharmacy");
-    s2.printInfo(); 
+    s2.printInfo();
 }
 
+//  <---- More Thoery ----->
 
-
-
-//  <---- More Thoery -----> 
-
-/* 
+/*
 
 -- Constructor is a special type of member function of a class which is automatically called when an object of a class is created.
 
 -- C++ automatically provides a default constructor, but custom constructors can be defined to take parameters.
 
--- Destructors are used to clean up resources when an object is no longer needed, though they are not explicitly covered in 
+-- Destructors are used to clean up resources when an object is no longer needed, though they are not explicitly covered in
    the provided transcript.
 
 --->  Types of Constructors

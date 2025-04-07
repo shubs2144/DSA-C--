@@ -81,16 +81,21 @@ public:
         cout << "Roll No: " << Roll_no << endl;
         cout << "Course: " << Course << endl;
     }
+
+    // Constructor
+    Student(string name, int age, int roll_no, string course)
+    {
+        SetName(name);
+        SetAge(age);
+        SetRoll_no(roll_no);
+        SetCourse(course);
+    }
 };
 
 int main()
 {
-    Student s1;
-
-    s1.SetName("Shub");
-    s1.SetAge(30);
-    s1.SetRoll_no(101);
-    s1.SetCourse("Engineering");
+    Student s1 = Student("Shubham", 23, 101, "Engineering");
+    s1.SetName("Shubham Patil"); // Setter
 
     cout << s1.GetName() << " " << s1.GetRoll_no() << " has taken " << s1.GetCourse() << "  at " << s1.GetAge() << endl;
 

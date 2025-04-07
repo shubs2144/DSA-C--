@@ -4,28 +4,31 @@
 
 using namespace std;
 
-class Cricket{
+class Cricket
+{
 public:
-    virtual void display() {
+    virtual void display()
+    {
         cout << "Cricket is my fav game " << endl;
     }
 };
 
-class Football : public Cricket{
+class Football : public Cricket
+{
 public:
-    void display() {
+    void display()
+    {
         cout << "Football is my fav game " << endl;
     }
 };
 
-int main(){
-    Cricket* c1 = new Football();
+int main()
+{
+    Cricket *c1 = new Football();
     c1->display(); // Football is my fav game
 }
 
-
-
-/* More Theory 
+/* More Theory
 
 Virtual functions are defined in a base class and can be redefined in derived classes, enabling runtime polymorphism.
 
