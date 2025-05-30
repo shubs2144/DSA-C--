@@ -152,7 +152,7 @@ It allows a new class (derived class) to acquire the properties (data members) a
 ---
 
 ## Syntax:
-```cpp
+
 class BaseClass {
    ///properties and functions
 };

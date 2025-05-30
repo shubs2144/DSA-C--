@@ -73,7 +73,24 @@ Parameterized Constructor – A constructor that accepts arguments to initialize
 
 Copy Constructor – A constructor that creates a new object as a copy of an existing object.
 
+/*What is a Constructor in C++?
 
+--> A constructor is a special member function in a class that automatically gets called when an object of the class is created. It is mainly used to initialize objects.
+
+--> 🔹 Key Features of a Constructor:
+
+1️⃣ Same name as the class
+2️⃣ No return type (not even void)
+3️⃣ Automatically invoked when an object is created
+4️⃣ Used for initializing class members
+
+--> 🛠 Types of Constructors in C++
+
+1️⃣ Default Constructor → No parameters
+2️⃣ Parameterized Constructor → Takes arguments
+3️⃣ Copy Constructor → Copies an object
+
+ */
 
 
 ---> // Example of Constructor:
@@ -112,4 +129,3 @@ int main() {
     return 0;
 }
 
-*/

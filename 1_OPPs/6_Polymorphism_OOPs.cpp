@@ -71,7 +71,7 @@ Compile-time polymorphism is resolved during compilation and is achieved through
 Function overloading allows multiple functions with the same name but different parameters (different type or number of arguments).
 
 #### **Example: Function Overloading**
-```cpp
+
 #include <iostream>
 using namespace std;
 
@@ -96,7 +96,7 @@ int main() {
 Operator overloading allows operators to be redefined to work with user-defined types (classes).
 
 #### **Example: Operator Overloading**
-```cpp
+
 #include <iostream>
 using namespace std;
 
@@ -130,7 +130,7 @@ Run-time polymorphism is resolved during runtime and is achieved through **funct
 Function overriding allows a derived class to provide a specific implementation of a function that is already defined in the base class.
 
 #### **Example: Function Overriding**
-```cpp
+
 #include <iostream>
 using namespace std;
 

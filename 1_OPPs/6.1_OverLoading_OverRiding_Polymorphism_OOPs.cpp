@@ -2,7 +2,6 @@
 using namespace std;
 
 // funtion overloading
-
 class Calculator
 {
 public:
@@ -11,7 +10,7 @@ public:
         return a + b;
     };
 
-    float mul(float a, float b)
+    float add(float a, float b)
     {
         return a * b;
     };
@@ -19,7 +18,6 @@ public:
 
 
 // funtion overriding
-
 class Human
 {
 public:
@@ -32,7 +30,7 @@ public:
 class Men : public Human
 {
 public:
-    void HumanLooks()
+    void HumanLooks() override
     {
         cout << "All mens are Handsome " << endl;
     }
@@ -41,7 +39,7 @@ public:
 class Woman : public Human
 {
 public:
-    void HumanLooks()
+    void HumanLooks() override
     {
         cout << "All womans are beautifull " << endl;
     }
@@ -51,13 +49,16 @@ int main()
 {
     Calculator c1;
     cout << "add : " << c1.add(5, 8) << endl;
-    cout << "mul : " << c1.mul(3.4, 5.7) << endl;
+    cout << "mul : " << c1.add(3.4f, 5.7f) << endl;
 
     Human *h1 = new Men;
     h1->HumanLooks();
 
     Human *h2 = new Woman;
     h2->HumanLooks();
+
+    delete h1;
+    delete h2;
 
     return 0;
 }
@@ -73,7 +74,7 @@ Definition: When multiple functions in the same class have the same name but dif
 🧠 *It helps perform similar operations with different types or number of inputs.*
 
 Example:
-```cpp
+
 void show(int x);
 void show(double y);
 void show(int x, int y);
@@ -88,15 +89,21 @@ Definition: When a derived class has a function with the same name and parameter
 🧠 *It allows the derived class to give a new behavior to the inherited function.*
 
 Example:
-```cpp
+
 class Animal {
 public:
-    virtual void sound() { cout << "Animal sound"; }
+    virtual void sound() 
+    { 
+    cout << "Animal sound"; 
+    }
 };
 
 class Dog : public Animal {
 public:
-    void sound() override { cout << "Dog barks"; }
+    void sound() override 
+    { 
+    cout << "Dog barks";
+    }
 };
 
 */

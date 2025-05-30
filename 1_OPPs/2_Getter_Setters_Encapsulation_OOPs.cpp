@@ -37,6 +37,7 @@ public:
         return Name;
     }
 
+
     void SetAge(int age)
     {
         if (age >= 18)
@@ -94,10 +95,13 @@ public:
 
 int main()
 {
-    Student s1 = Student("Shubham", 23, 101, "Engineering");
+    // Syntax: ClassName objectName(arguments);
+    Student s1("Shubham", 23, 101, "Engineering"); // s1 -> The name of the object you're creating.
     s1.SetName("Shubham Patil"); // Setter
 
     cout << s1.GetName() << " " << s1.GetRoll_no() << " has taken " << s1.GetCourse() << "  at " << s1.GetAge() << endl;
+
+    s1.StudentInfo();
 
     return 0;
 }
