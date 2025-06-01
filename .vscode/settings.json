@@ -4,7 +4,20 @@
     "files.associations": {
         "iostream": "cpp",
         "string": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "ratio": "cpp",
+        "iomanip": "cpp",
+        "deque": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp",
+        "random": "cpp"
     },
     "files.exclude": {
         "**/*.exe": true

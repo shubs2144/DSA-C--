@@ -17,6 +17,8 @@ Welcome to the DSA-C++ repository! This repository contains implementations of v
 
 ## Getting Started
  
+ #### Run command - g++ <finename>.cpp -o app && app.exe
+
 
 - **OOPs**
 <!-- OOps -->/
