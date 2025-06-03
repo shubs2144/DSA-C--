@@ -25,13 +25,10 @@ int main() {
 
 /*
 ✅ Simple & Short Explanation of Bubble Sort:
+
 Bubble Sort is a sorting algorithm that:
 
-Repeatedly compares each pair of adjacent elements
-
-Swaps them if they are in the wrong order
-
-This process is repeated until the array is fully sorted
+Repeatedly compares each pair of adjacent elements & Swaps them if they are in the wrong order , This process is repeated until the array is fully sorted
 
 🔁 Think of it like bubbling up the largest element to the end in each pass.
 

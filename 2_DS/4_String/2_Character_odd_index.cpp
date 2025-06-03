@@ -12,8 +12,7 @@ int main()
     cout << "Enter the name : ";
     cin >> name;
 
-    for (int i = 0; i < name.length(); i++)
-        ;
+    for (int i = 0; i < name.length(); i++);
     if (i % 2 != 0)
     {
         cout << s[i];

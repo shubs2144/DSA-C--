@@ -27,6 +27,7 @@ int main(){
 /*
 
 🔍 What is Selection Sort?
+
 Selection Sort is a simple sorting algorithm that works by repeatedly finding the smallest (or largest) element from the unsorted part of the array and putting it at the beginning.
 
 📚 How it works (step-by-step):

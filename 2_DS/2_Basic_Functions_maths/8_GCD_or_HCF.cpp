@@ -20,7 +20,7 @@ int main(){
 
     int gcd = 1;
 
-    for(int i=min(n1, n2); i>=i; i--){
+    for(int i=1; i<min(n1, n2); i++){
         if((n1 % i == 0) && (n2 % i == 0)){
             gcd = i;
         }
@@ -39,7 +39,7 @@ int main(){
     cin >> n2; 
 
 
-    for(int i=min(n1, n2); i>=i; i--){
+    for(int i=min(n1, n2); i>=1; i--){
         if((n1 % i == 0) && (n2 % i == 0)){
             cout << "  GCD is : " << i ;
             break;

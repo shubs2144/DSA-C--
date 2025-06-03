@@ -17,7 +17,8 @@
         "regex": "cpp",
         "utility": "cpp",
         "valarray": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "thread": "cpp"
     },
     "files.exclude": {
         "**/*.exe": true

@@ -41,7 +41,7 @@ int main() {
 // Input: 14
 
 
-// Method 2: Using log10 function
+//---------> Method 2: Using log10 function
 
 #include <iostream>
 #include <cmath> // For log10 function

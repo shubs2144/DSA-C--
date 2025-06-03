@@ -51,7 +51,7 @@ public:
 
 class Girls : public Students {
 public:
-    void Count() override {  /
+    void Count() override {  
         cout << "Girls count is 20" << endl;
     }
 };
@@ -69,12 +69,13 @@ int main() {
     return 0;
 }
 
-✅ Best Practices to Follow
-1. Use override keyword
-📌 Use override always when overriding virtual methods — it catches mistakes at compile time.
+// ✅ Best Practices to Follow
 
-2. Use virtual in base class
-You already did this correctly!
+// 1. Use override keyword
+// 📌 Use override always when overriding virtual methods — it catches mistakes at compile time.
+
+// 2. Use virtual in base class
+// You already did this correctly!
 
 
 )
