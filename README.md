@@ -128,6 +128,8 @@ A pure virtual function in C++ is a function without implementation in the base 
 
  -->
 
-More Interview quetions - OOPs
+More Interview quetions - OOPs // resources
 
-📌 https://www.interviewbit.com/oops-interview-questions/ 📌
+📌 https://www.interviewbit.com/oops-interview-questions/ 
+📌 https://instabyte.io/p/dsa-master
+📌 https://instabyte.io/p/interview-master-100
