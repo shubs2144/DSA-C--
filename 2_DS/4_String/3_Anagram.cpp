@@ -26,8 +26,8 @@ bool checkAnagram(strign a, string b)
     if (sizeA != sizeB)
         return false;
 
-    sort(a.begin(), sort(a.end()));
-    sort(b.begin(), sort(b.end()));
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
 
     if (a == b)
     {

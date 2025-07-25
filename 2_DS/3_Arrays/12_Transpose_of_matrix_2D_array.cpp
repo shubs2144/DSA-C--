@@ -14,7 +14,7 @@ int main()
     // Transposing the arr
     for(int i = 0; i < 3; i++) {
         for(int j = 0; j < 3; j++) {
-            transpose[j][i] = arr[i][j];
+            transpose[j][i] = arr[i][j];  //Element at arr[i][j] becomes transpose[j][i]
         }
     }
 

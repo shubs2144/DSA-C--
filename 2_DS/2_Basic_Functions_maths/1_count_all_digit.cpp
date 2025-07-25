@@ -37,11 +37,10 @@ int main() {
     cout << "Number of digits: " << result << endl;
     return 0;
 }
-// Output:  Number of digits: 2     
-// Input: 14
 
 
 //---------> Method 2: Using log10 function
+
 
 #include <iostream>
 #include <cmath> // For log10 function
@@ -51,3 +50,13 @@ int countDigits(int n) {
     if (n == 0) return 1; // Special case for 0
     return int (log10(n)) + 1; // Count digits using logarithm
 }
+
+
+/*
+
+n = 1234
+log10(1234) ≈ 3.09
+int(log10(1234)) = 3
+3 + 1 = 4 → ✅ 4 digits
+
+*/

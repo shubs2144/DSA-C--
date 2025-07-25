@@ -30,7 +30,7 @@ int main()
 
 
 
-( Best Practices to Follow
+// Best Practices to Follow
 
 #include <iostream>
 using namespace std;

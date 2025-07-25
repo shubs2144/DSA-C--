@@ -28,21 +28,25 @@ public:
         Roll_no = roll_no;
         Course = course;
     }
+/*
 
-    // if we don't define constructor then default constructor will be called.
+    --->< if we don't define constructor then default constructor will be called.
 
-    // Student(){
-    //     cout << "Default Constructor Called" << endl;
-    // }
+    Student(){
+        cout << "Default Constructor Called" << endl;
+    }
 
-    // when attribute and assign values are same then we can use this keyword to assign values.
+    ---> when attribute and assign values are same then we can use this keyword to assign values.
 
-    // Student(string Name , int Age , int Roll_no , string Course){
-    //     this->Name = Name;
-    //     this->Age = Age;
-    //     this->Roll_no = Roll_no;
-    //     this->Course = Course;
-    // }
+    Student(string Name , int Age , int Roll_no , string Course){
+        this->Name = Name;
+        this->Age = Age;
+        this->Roll_no = Roll_no;
+        this->Course = Course;
+    }
+
+*/
+
 };
 
 int main()

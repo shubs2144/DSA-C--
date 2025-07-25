@@ -40,28 +40,45 @@ Space: O(d) → In worst case, if d = n, space is O(n)
 using namespace std;
 
 // Function to rotate array to the left by d positions using temp array
-void rotateArrayLeft(int arr[], int size, int d) {
+void rotateArrayLeft(int arr[], int size, int d)
+{
     d = d % size; // Normalize rotation value
 
     int temp[d]; // Temp array to store first d elements
 
     // Step 1: Store first d elements in temp
-    for (int i = 0; i < d; i++) {
+    for (int i = 0; i < d; i++)
+    {
         temp[i] = arr[i];
     }
 
     // Step 2: Shift remaining elements to the left
-    for (int i = d; i < size; i++) {
+    for (int i = d; i < size; i++)
+    {
         arr[i - d] = arr[i];
     }
 
     // Step 3: Copy temp elements to the end
-    for (int i = size - d; i < size; i++) {
+    for (int i = size - d; i < size; i++)
+    {
         arr[i] = temp[i - (size - d)];
     }
+
+    /*
+    Now plug in values:
+
+    i = 3:
+    arr[3] = temp[3 - 3] = temp[0] = 1
+
+    i = 4:
+    arr[4] = temp[4 - 3] = temp[1] = 2
+
+    ✅ Correctly fills the last two positions!
+    */
 }
 
-int main() {
+int main()
+{
     int size, d;
 
     // Take size input
@@ -72,7 +89,8 @@ int main() {
 
     // Take array input
     cout << "Enter array elements: ";
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         cin >> arr[i];
     }
 
@@ -85,7 +103,8 @@ int main() {
 
     // Output result
     cout << "Array after rotating left by " << d << " positions: ";
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
@@ -93,18 +112,17 @@ int main() {
     return 0;
 }
 
+//------> #method 2  ### optimize way
 
-
-//------> #method 2  ### optimize way 
-
-int rotateArrayLeft(int arr[], int size, int d){
-    reverse(arr, arr+d);
-    reverse(arr+d, arr+size);
-    reverse(arr, arr+size);
+int rotateArrayLeft(int arr[], int size, int d)
+{
+    reverse(arr, arr + d);
+    reverse(arr + d, arr + size);
+    reverse(arr, arr + size);
 }
 
-
-int main() {
+int main()
+{
     int size, d;
 
     // Take size input
@@ -115,7 +133,8 @@ int main() {
 
     // Take array input
     cout << "Enter array elements: ";
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         cin >> arr[i];
     }
 
@@ -128,7 +147,8 @@ int main() {
 
     // Output result
     cout << "Array after rotating left by " << d << " positions: ";
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;

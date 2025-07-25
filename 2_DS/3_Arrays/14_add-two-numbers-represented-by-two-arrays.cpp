@@ -1,8 +1,11 @@
 /*
-Input : arr1[] = [1, 2], arr2[] = [2, 1]
+Input : arr1[] = [1, 2], 
+        arr2[] = [2, 1]
 Output : 33
 Explanation: arr1[]=[1,2] number represented by first array is 12. arr2[] = [2, 1] number represented by second array is 21. Sum = 12 + 21 = 33.
-Input : arr1[] = [9, 5, 4, 9], arr2[] = [2, 1, 4] 
+
+Input : arr1[] = [9, 5, 4, 9], 
+        arr2[] = [   2, 1, 4] 
 Output : 9763 
 Explanation : sum of 9549 and 214 is 9763. 
 */

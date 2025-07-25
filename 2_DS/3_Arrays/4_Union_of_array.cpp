@@ -31,7 +31,7 @@ int main(){
 
 //ignore duplicate numbers
 
-/*
+
 #include <iostream>
 #include <vector>
 #include <set>
@@ -42,7 +42,7 @@ int main() {
     vector<int> brr{2, 6, 4, 5, 9, 6};
     set<int> uniqueSet; // Will store only unique values
 
-### Insert elements from both arrays
+//### Insert elements from both arrays
 
     for (int num : arr) {
         uniqueSet.insert(num);
@@ -52,7 +52,7 @@ int main() {
         uniqueSet.insert(num);
     }
 
-### Print unique elements (union without duplicates)
+//### Print unique elements (union without duplicates)
 
     for (int num : uniqueSet) {
         cout << num << " ";
@@ -60,5 +60,3 @@ int main() {
 
     return 0;
 }
-
-*/

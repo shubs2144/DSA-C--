@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
+//## Print Row wise 
 int main()
 {
     int arr[3][3] = {
@@ -18,7 +18,7 @@ int main()
 }
 
 
-##Print Col wise 
+//## Print Col wise 
 
 int main()
 {
@@ -34,9 +34,9 @@ int main()
         }
     }
 }
-*/
 
-// sum of rows
+
+// ###### sum of rows
 
 int main()
 {

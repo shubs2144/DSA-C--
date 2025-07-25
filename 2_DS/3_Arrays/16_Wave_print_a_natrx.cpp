@@ -11,8 +11,8 @@ Wave Output:
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Wave-col wise print
+
+//Wave-col wise print
 
 vector<int> wavePrint(int arr[][4], int row, int col)
 {
@@ -37,7 +37,7 @@ vector<int> wavePrint(int arr[][4], int row, int col)
     }
     return ans;
 }
-*/
+
 
 // Wave-row wise print
 
