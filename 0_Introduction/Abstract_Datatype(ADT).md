@@ -1,0 +1,6 @@
+- Datatype -- Representation of data in a structured way.
+- Abstract Data Type (ADT) -- A mathematical model for a certain class of data structures that defines the data type in terms of its behavior from the point of view of a user, specifically the operations that can be performed on it and the properties of those operations.
+- Data Structure -- A concrete implementation of an ADT, which includes the representation of data in memory and the algorithms for manipulating that data.
+- Data Type -- A classification that specifies which type of value a variable can hold, such as integer, float, character, etc. It defines the operations that can be performed on that data.
+- Data Representation -- The way data is stored in a computer, which can include various formats like binary, text, or structured formats like JSON or XML.
+- Data Model -- A conceptual representation of data structures and their relationships, often used in database design. It defines how data is organized, stored, and manipulated.

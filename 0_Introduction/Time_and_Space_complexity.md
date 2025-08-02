@@ -1,0 +1,2 @@
+- Time Complexity -- A computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input.
+- Space Complexity -- A computational complexity that describes the amount of memory space required by an algorithm as a function of the length of the input.
